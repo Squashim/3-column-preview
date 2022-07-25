@@ -1,6 +1,12 @@
+@import 'var';
 *, *::after, *::before{
     padding: 0; margin: 0; box-sizing: border-box;
 }
 body{
     min-height: 100vh;
+    background: $lgray;
+    font-size: $fsize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

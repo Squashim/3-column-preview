@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 *, *::after, *::before {
   padding: 0;
   margin: 0;
@@ -8,4 +9,15 @@
 
 body {
   min-height: 100vh;
+  background: hsl(0deg, 0%, 95%);
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  padding: 5rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
 }/*# sourceMappingURL=main.css.map */
