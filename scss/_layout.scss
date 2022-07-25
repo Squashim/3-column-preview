@@ -1,7 +1,114 @@
 @import 'var';
+@import 'media';
 
 main{
-    padding: 5rem 1.5rem;
+    padding: 4rem 1.5rem;
     display: grid;
     grid-template-columns: 1fr;
+    @include desktop{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .heading{
+        font-family: $ffamily700;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $lgray;
+        margin: 1.5rem 0;
+        font-size: 2rem;
+        @include desktop{
+            font-size: 3rem;
+            margin: 2rem 0;
+        }
+    }
+    .logo{
+        display: block;
+        width: 20%;
+        min-width: 3rem;
+        max-width: 4rem;
+        @include desktop{
+            width: 100%;
+        }
+    }
+    .text{
+        font-family: $ffamily400;
+        color: $paragraph;
+        line-height: 1.5rem;
+        padding-right: 1.5rem;
+        @include desktop{
+            padding-right: 2.7rem;
+        }
+    }
+    .learn-btn{
+        display: block;
+        font-family: $ffamily400;
+        background-color: $lgray;
+        outline: none;
+        border: 2px solid $lgray;
+        border-radius: 1.5rem;
+        padding: .75rem 1.5rem;
+        margin: 1.5rem 0 .5rem 0;
+        font-weight: $fw400;
+        cursor: pointer;
+        max-width: 9rem;
+        @include desktop{
+            font-weight: $fw700;
+            margin-top: auto;
+            font-size: $fsize;
+        }
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        padding:2rem;
+        @include desktop{
+            max-width: calc((100vw / 3) - 8rem);
+            min-height: 35rem;
+            padding: 3rem;
+        }
+    }
+    .sedans{
+        background: $orange;
+        border-radius: .5rem .5rem 0 0;
+        @include desktop{
+            border-radius: .5rem 0 0 .5rem;
+        }
+        button{
+            color: $orange;
+            &:hover, &:focus{
+                background: $orange;
+                color: $lgray;
+            }
+        }
+    }
+    .suvs{
+        background: $lcyan;
+        button{
+            color: $lcyan;
+            &:hover, &:focus{
+                background: $lcyan;
+                color: $lgray;
+            }
+        }
+    }
+    .luxury{
+        background: $dcyan;
+        border-radius: 0 0 0.5rem 0.5rem;
+        @include desktop{
+            border-radius: 0 .5rem .5rem 0;
+        }
+        button{
+            color: $dcyan;
+            &:hover, &:focus{
+                background: $dcyan;
+                color: $lgray;
+            }
+        }
+    }
+}
+footer{
+    text-align: center;
+    font-family: $ffamily400;
+    a{
+        color: $orange;
+    }
 }

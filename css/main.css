@@ -13,11 +13,135 @@ body {
   font-size: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
-  padding: 5rem 1.5rem;
+  padding: 4rem 1.5rem;
   display: grid;
   grid-template-columns: 1fr;
+}
+@media (min-width: 1140px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+main .heading {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 95%);
+  margin: 1.5rem 0;
+  font-size: 2rem;
+}
+@media (min-width: 1140px) {
+  main .heading {
+    font-size: 3rem;
+    margin: 2rem 0;
+  }
+}
+main .logo {
+  display: block;
+  width: 20%;
+  min-width: 3rem;
+  max-width: 4rem;
+}
+@media (min-width: 1140px) {
+  main .logo {
+    width: 100%;
+  }
+}
+main .text {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media (min-width: 1140px) {
+  main .text {
+    padding-right: 2.7rem;
+  }
+}
+main .learn-btn {
+  display: block;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0deg, 0%, 95%);
+  outline: none;
+  border: 2px solid hsl(0deg, 0%, 95%);
+  border-radius: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  margin: 1.5rem 0 0.5rem 0;
+  font-weight: 400;
+  cursor: pointer;
+  max-width: 9rem;
+}
+@media (min-width: 1140px) {
+  main .learn-btn {
+    font-weight: 700;
+    margin-top: auto;
+    font-size: 15px;
+  }
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+@media (min-width: 1140px) {
+  main section {
+    max-width: calc(33.3333333333vw - 8rem);
+    min-height: 35rem;
+    padding: 3rem;
+  }
+}
+main .sedans {
+  background: hsl(31deg, 77%, 52%);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+@media (min-width: 1140px) {
+  main .sedans {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}
+main .sedans button {
+  color: hsl(31deg, 77%, 52%);
+}
+main .sedans button:hover, main .sedans button:focus {
+  background: hsl(31deg, 77%, 52%);
+  color: hsl(0deg, 0%, 95%);
+}
+main .suvs {
+  background: hsl(184deg, 100%, 22%);
+}
+main .suvs button {
+  color: hsl(184deg, 100%, 22%);
+}
+main .suvs button:hover, main .suvs button:focus {
+  background: hsl(184deg, 100%, 22%);
+  color: hsl(0deg, 0%, 95%);
+}
+main .luxury {
+  background: hsl(179deg, 100%, 13%);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+@media (min-width: 1140px) {
+  main .luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+main .luxury button {
+  color: hsl(179deg, 100%, 13%);
+}
+main .luxury button:hover, main .luxury button:focus {
+  background: hsl(179deg, 100%, 13%);
+  color: hsl(0deg, 0%, 95%);
+}
+
+footer {
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+footer a {
+  color: hsl(31deg, 77%, 52%);
 }/*# sourceMappingURL=main.css.map */
